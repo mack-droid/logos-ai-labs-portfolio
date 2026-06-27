@@ -557,18 +557,18 @@ export default function App() {
             </div>
 
             <p className="text-base sm:text-lg md:text-xl text-slate-400 leading-relaxed max-w-3xl font-sans">
-              Cybersecurity professional with **8 years of experience** specializing in ethical hacking, 
-              penetration testing, and Identity Access Management (IAM). Currently engineering leading-edge **AI platform guardrails,
-              OSS model governance, and secure Generative AI Vertex gateways** inside global banking.
+              Cybersecurity professional with **10 years of experience** — **8 years** in Application Security, ethical hacking,
+              penetration testing, and Identity Access Management (IAM), now transitioning into **AI Platform &amp; AI Solution Engineering**.
+              Currently engineering leading-edge **AI platform guardrails, OSS model governance, and secure Generative AI Vertex gateways** inside global banking.
             </p>
 
             {/* Quick stats grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 max-w-3xl">
               {[
-                { title: "AppSec & IAM", value: "8 Years" },
-                { title: "AI Gateways", value: "Vertex & Apigee" },
-                { title: "MSc Degree", value: "1:1 Honors" },
-                { title: "Compliance", value: "SoD, OWASP, CIS" }
+                { title: "Total Experience", value: "10 Years" },
+                { title: "AppSec & Cyber", value: "8 Years" },
+                { title: "AI Platform & Solutions", value: "2 Years" },
+                { title: "MSc Degree", value: "1:1 Honors" }
               ].map((stat, i) => (
                 <div key={i} className="bg-[#0f1520] border border-slate-800/60 p-4 rounded-sm">
                   <span className="block font-mono text-[10px] text-slate-500 uppercase tracking-wider">{stat.title}</span>
