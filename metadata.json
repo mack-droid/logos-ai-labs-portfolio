@@ -1,0 +1,6 @@
+{
+  "name": "Logos AI Labs",
+  "description": "Logos AI Labs — AI & Agentic Security portfolio. © 2026 Logos AI Labs. All rights reserved.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
