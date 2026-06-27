@@ -204,11 +204,11 @@ export default function App() {
             }
           },
           color: {
-            value: "#00ffaa"
+            value: "#ff6a00"
           },
           links: {
             enable: true,
-            color: "#00ffaa",
+            color: "#ff6a00",
             distance: 140,
             opacity: 0.12,
             width: 1
@@ -458,10 +458,10 @@ export default function App() {
   const baseScale = Math.max(0.85, 1 - scrollPercent * 0.2);
 
   return (
-    <div className="relative min-h-screen font-sans bg-[#0a0e14] text-[#e2e8f0] antialiased selection:bg-[#00ffaa]/30 selection:text-[#00ffaa]">
+    <div className="relative min-h-screen font-sans bg-[#0a0e14] text-[#e2e8f0] antialiased selection:bg-[#ff6a00]/30 selection:text-[#ff6a00]">
       {/* Scroll Progress Bar */}
       <div 
-        className="fixed top-0 left-0 h-[2px] bg-[#00ffaa] z-50 transition-all duration-75"
+        className="fixed top-0 left-0 h-[2px] bg-[#ff6a00] z-50 transition-all duration-75"
         style={{ width: `${scrollPercent * 100}%` }}
       />
 
@@ -478,11 +478,11 @@ export default function App() {
       <header className="sticky top-0 bg-[#0a0e14]/90 backdrop-blur-md border-b border-[#1e293b]/50 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <a href="#home" className="flex items-center space-x-3 group">
-            <div className="w-8 h-8 rounded border border-[#00ffaa]/40 flex items-center justify-center bg-[#0a0e14] group-hover:border-[#00ffaa] transition-colors duration-200">
-              <span className="font-mono text-xs font-bold text-[#00ffaa] group-hover:scale-110 transition-transform">LA</span>
+            <div className="w-8 h-8 rounded border border-[#ff6a00]/40 flex items-center justify-center bg-[#0a0e14] group-hover:border-[#ff6a00] transition-colors duration-200">
+              <span className="font-mono text-xs font-bold text-[#ff6a00] group-hover:scale-110 transition-transform">LA</span>
             </div>
-            <span className="font-display font-bold tracking-tight text-white group-hover:text-[#00ffaa] transition-colors duration-200">
-              {SITE_NAME}<span className="text-[#00ffaa] font-mono font-normal">.sec</span>
+            <span className="font-display font-bold tracking-tight text-white group-hover:text-[#ff6a00] transition-colors duration-200">
+              {SITE_NAME}<span className="text-[#ff6a00] font-mono font-normal">.sec</span>
             </span>
           </a>
 
@@ -494,7 +494,7 @@ export default function App() {
                 href={`#${sect.id}`}
                 className={`px-2.5 py-1.5 rounded-sm font-mono text-[11px] transition-all duration-200 uppercase tracking-wider ${
                   activeSection === sect.id 
-                    ? "text-[#00ffaa] bg-[#00ffaa]/5 border-b-2 border-[#00ffaa]/80" 
+                    ? "text-[#ff6a00] bg-[#ff6a00]/5 border-b-2 border-[#ff6a00]/80" 
                     : "text-slate-400 hover:text-white hover:bg-slate-800/40"
                 }`}
               >
@@ -513,7 +513,7 @@ export default function App() {
             )}
             <a 
               href="#connect"
-              className="px-3.5 py-1.5 rounded border border-[#00ffaa]/30 hover:border-[#00ffaa] font-mono text-xs text-[#00ffaa] hover:bg-[#00ffaa]/5 transition-all duration-200"
+              className="px-3.5 py-1.5 rounded border border-[#ff6a00]/30 hover:border-[#ff6a00] font-mono text-xs text-[#ff6a00] hover:bg-[#ff6a00]/5 transition-all duration-200"
             >
               $ handshake
             </a>
@@ -528,14 +528,14 @@ export default function App() {
         <section id="home" className="scroll-section min-h-[85vh] flex flex-col justify-center py-12">
           {SHOW_STATUS && (
             <div className="inline-flex self-start items-center space-x-2 font-mono text-xs text-slate-400 bg-slate-900/60 border border-slate-800 px-3 py-1.5 rounded mb-8 animate-fade-in">
-              <span className="w-2 h-2 rounded-full bg-[#00ffaa] animate-ping" />
+              <span className="w-2 h-2 rounded-full bg-[#ff6a00] animate-ping" />
               <span>&gt; status: open to Enterprise Application Security / TISO / AI Security DevSecOps roles.</span>
             </div>
           )}
 
           <div className="max-w-4xl space-y-6">
             <div className="space-y-2 animate-fade-in">
-              <div className="flex flex-wrap items-center gap-3 font-mono text-xs text-[#00ffaa]">
+              <div className="flex flex-wrap items-center gap-3 font-mono text-xs text-[#ff6a00]">
                 <div className="flex items-center space-x-1.5">
                   <MapPin className="w-3.5 h-3.5" />
                   <span>Dublin, Ireland</span>
@@ -550,7 +550,7 @@ export default function App() {
               </div>
               <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-extrabold tracking-tight text-white leading-tight">
                 Securing Enterprise <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-[#00ffaa] animate-pulse">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-[#ff6a00] animate-pulse">
                   AI & Gateways
                 </span>
               </h1>
@@ -581,14 +581,14 @@ export default function App() {
             <div className="flex flex-wrap gap-4 pt-4">
               <a 
                 href="#research" 
-                className="bg-[#00ffaa] hover:bg-[#00e095] text-[#0a0e14] px-5 py-3 rounded-sm font-mono text-xs sm:text-sm font-bold flex items-center space-x-2 transition-all duration-200 shadow-md shadow-[#00ffaa]/15"
+                className="bg-[#ff6a00] hover:bg-[#e55a00] text-[#0a0e14] px-5 py-3 rounded-sm font-mono text-xs sm:text-sm font-bold flex items-center space-x-2 transition-all duration-200 shadow-md shadow-[#ff6a00]/15"
               >
                 <span>Read Threat Blog</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a 
                 href="#experience" 
-                className="border border-slate-700 hover:border-[#00ffaa]/60 text-slate-300 hover:text-white px-5 py-3 rounded-sm font-mono text-xs sm:text-sm flex items-center space-x-2 transition-all duration-200 bg-slate-900/20"
+                className="border border-slate-700 hover:border-[#ff6a00]/60 text-slate-300 hover:text-white px-5 py-3 rounded-sm font-mono text-xs sm:text-sm flex items-center space-x-2 transition-all duration-200 bg-slate-900/20"
               >
                 <span>Audit Work History</span>
               </a>
@@ -602,7 +602,7 @@ export default function App() {
             
             {/* Left Header columns */}
             <div className="lg:col-span-4 space-y-4">
-              <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#00ffaa] bg-[#00ffaa]/5 px-2.5 py-1 rounded-sm">
+              <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#ff6a00] bg-[#ff6a00]/5 px-2.5 py-1 rounded-sm">
                 <Layers className="w-3.5 h-3.5" />
                 <span>EXPERT ARCHITECT</span>
               </div>
@@ -638,7 +638,7 @@ export default function App() {
                   and defensive automation. I design and implement security patterns that sit between advanced research models 
                   (such as Hugging Face and Vertex AI SDKs) and rigid operational parameters.
                 </p>
-                <div className="border-l-2 border-[#00ffaa]/40 pl-4 py-1.5 bg-slate-900/20 my-6">
+                <div className="border-l-2 border-[#ff6a00]/40 pl-4 py-1.5 bg-slate-900/20 my-6">
                   <p className="italic text-slate-300 text-sm">
                     "AI security is not about blocking access; it's about engineering intelligent intermediate containment tunnels. An un-monitored SDK query bypasses years of traditional firewall and endpoint hardening."
                   </p>
@@ -655,7 +655,7 @@ export default function App() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {TECHNICAL_SKILLS_CATEGORIES.map((cat, i) => (
                     <div key={i} className="bg-[#0f1520] border border-slate-800/80 p-5 rounded">
-                      <h4 className="text-[#00ffaa] font-mono text-xs font-bold mb-3 uppercase tracking-wider">{cat.title}</h4>
+                      <h4 className="text-[#ff6a00] font-mono text-xs font-bold mb-3 uppercase tracking-wider">{cat.title}</h4>
                       <div className="flex flex-wrap gap-1.5">
                         {cat.skills.map((skill, si) => (
                           <span key={si} className="bg-slate-950 text-slate-300 text-[10px] font-mono px-2 py-1 rounded border border-slate-800">
@@ -678,7 +678,7 @@ export default function App() {
             
             {/* Left Header */}
             <div className="lg:col-span-4 space-y-4">
-              <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#00ffaa] bg-[#00ffaa]/5 px-2.5 py-1 rounded-sm">
+              <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#ff6a00] bg-[#ff6a00]/5 px-2.5 py-1 rounded-sm">
                 <Briefcase className="w-3.5 h-3.5" />
                 <span>CHRONOLOGICAL VERIFICATION</span>
               </div>
@@ -697,7 +697,7 @@ export default function App() {
                     onClick={() => setSelectedJobIndex(idx)}
                     className={`w-full text-left p-3 rounded font-mono text-xs flex items-center justify-between border transition-all ${
                       selectedJobIndex === idx
-                        ? "border-[#00ffaa] text-[#00ffaa] bg-[#00ffaa]/5 pl-4"
+                        ? "border-[#ff6a00] text-[#ff6a00] bg-[#ff6a00]/5 pl-4"
                         : "border-slate-800/60 text-slate-400 hover:text-white hover:bg-slate-900/40"
                     }`}
                   >
@@ -718,7 +718,7 @@ export default function App() {
                     onClick={() => setSelectedJobIndex(idx)}
                     className={`px-3 py-1.5 rounded-sm font-mono text-[10px] whitespace-nowrap border ${
                       selectedJobIndex === idx
-                        ? "border-[#00ffaa] text-[#00ffaa] bg-[#00ffaa]/5"
+                        ? "border-[#ff6a00] text-[#ff6a00] bg-[#ff6a00]/5"
                         : "border-slate-800 text-slate-400"
                     }`}
                   >
@@ -729,12 +729,12 @@ export default function App() {
 
               {/* Interactive terminal card */}
               <div className="bg-[#0f1520] border-2 border-slate-800/80 rounded-sm p-6 sm:p-8 space-y-6 relative overflow-hidden shadow-xl">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#00ffaa]/5 rounded-full blur-2xl pointer-events-none" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#ff6a00]/5 rounded-full blur-2xl pointer-events-none" />
                 
                 {/* Header status bar */}
                 <div className="flex flex-wrap items-center justify-between border-b border-slate-800 pb-4 gap-2">
                   <div className="space-y-1">
-                    <span className="font-mono text-[10px] uppercase text-[#00ffaa] tracking-widest block font-bold">
+                    <span className="font-mono text-[10px] uppercase text-[#ff6a00] tracking-widest block font-bold">
                       {JOB_HISTORY[selectedJobIndex].badge}
                     </span>
                     <h3 className="font-display font-bold text-xl sm:text-2xl text-white">
@@ -761,7 +761,7 @@ export default function App() {
                         transition={{ delay: idx * 0.04 }}
                         className="flex items-start space-x-2.5"
                       >
-                        <span className="text-[#00ffaa] font-mono text-xs mt-1.5 select-none shrink-0">&gt;</span>
+                        <span className="text-[#ff6a00] font-mono text-xs mt-1.5 select-none shrink-0">&gt;</span>
                         <span>{bullet}</span>
                       </motion.li>
                     ))}
@@ -783,7 +783,7 @@ export default function App() {
         <section id="projects" className="scroll-section py-24 border-t border-slate-800/40">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
-              <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#00ffaa] bg-[#00ffaa]/5 px-2.5 py-1 rounded-sm mb-4">
+              <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#ff6a00] bg-[#ff6a00]/5 px-2.5 py-1 rounded-sm mb-4">
                 <FileCode className="w-3.5 h-3.5" />
                 <span>INTEGRITY CHECK: ACTIVE</span>
               </div>
@@ -802,7 +802,7 @@ export default function App() {
 
           {loadingRepos ? (
             <div className="flex flex-col items-center justify-center py-20 space-y-3">
-              <Loader2 className="w-8 h-8 text-[#00ffaa] animate-spin" />
+              <Loader2 className="w-8 h-8 text-[#ff6a00] animate-spin" />
               <span className="font-mono text-xs text-slate-500">Retrieving repository schemas from api.github.com...</span>
             </div>
           ) : (
@@ -814,12 +814,12 @@ export default function App() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ delay: idx * 0.05 }}
-                  className={`bg-[#0f1520] border rounded-sm p-6 flex flex-col justify-between hover:border-[#00ffaa]/40 transition-colors duration-200 group relative ${
-                    project.is_featured ? 'border-[#00ffaa]/30' : 'border-slate-800/80'
+                  className={`bg-[#0f1520] border rounded-sm p-6 flex flex-col justify-between hover:border-[#ff6a00]/40 transition-colors duration-200 group relative ${
+                    project.is_featured ? 'border-[#ff6a00]/30' : 'border-slate-800/80'
                   }`}
                 >
                   {project.is_featured && (
-                    <span className="absolute top-3 right-3 flex items-center space-x-1 font-mono text-[9px] bg-[#00ffaa]/10 text-[#00ffaa] px-1.5 py-0.5 rounded border border-[#00ffaa]/30 uppercase tracking-widest">
+                    <span className="absolute top-3 right-3 flex items-center space-x-1 font-mono text-[9px] bg-[#ff6a00]/10 text-[#ff6a00] px-1.5 py-0.5 rounded border border-[#ff6a00]/30 uppercase tracking-widest">
                       <Sparkles className="w-2.5 h-2.5" />
                       <span>FEATURED</span>
                     </span>
@@ -829,7 +829,7 @@ export default function App() {
                     <div className="flex items-start justify-between">
                       <div className="space-y-1.5">
                         <span className="block font-mono text-[10px] text-slate-500">{project.language}</span>
-                        <h3 className="font-display font-bold text-base text-white group-hover:text-[#00ffaa] transition-colors duration-200">
+                        <h3 className="font-display font-bold text-base text-white group-hover:text-[#ff6a00] transition-colors duration-200">
                           {project.name}
                         </h3>
                       </div>
@@ -852,7 +852,7 @@ export default function App() {
                       href={project.html_url} 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="text-[#00ffaa] hover:underline flex items-center space-x-1 text-xs group-hover:translate-x-0.5 transition-transform"
+                      className="text-[#ff6a00] hover:underline flex items-center space-x-1 text-xs group-hover:translate-x-0.5 transition-transform"
                     >
                       <span>$ view</span>
                       <ChevronRight className="w-3 h-3" />
@@ -873,7 +873,7 @@ export default function App() {
         {/* RESEARCH & WRITING (BLOG) */}
         <section id="research" className="scroll-section py-24 border-t border-slate-800/40">
           <div className="max-w-3xl mb-12">
-            <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#00ffaa] bg-[#00ffaa]/5 px-2.5 py-1 rounded-sm mb-4">
+            <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#ff6a00] bg-[#ff6a00]/5 px-2.5 py-1 rounded-sm mb-4">
               <BookOpen className="w-3.5 h-3.5" />
               <span>OFFENSIVE THREAT INTEL</span>
             </div>
@@ -893,16 +893,16 @@ export default function App() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ delay: idx * 0.05 }}
-                className="bg-[#0f1520] border border-slate-800 hover:border-[#00ffaa]/30 p-6 rounded-sm flex flex-col md:flex-row md:items-center justify-between gap-6 hover:shadow-lg hover:shadow-cyan-950/10 transition-all duration-200"
+                className="bg-[#0f1520] border border-slate-800 hover:border-[#ff6a00]/30 p-6 rounded-sm flex flex-col md:flex-row md:items-center justify-between gap-6 hover:shadow-lg hover:shadow-cyan-950/10 transition-all duration-200"
               >
                 <div className="space-y-3 max-w-3xl">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="font-mono text-[9px] uppercase tracking-widest text-[#00ffaa] bg-[#00ffaa]/10 border border-[#00ffaa]/20 px-2 py-0.5 rounded-sm">
+                    <span className="font-mono text-[9px] uppercase tracking-widest text-[#ff6a00] bg-[#ff6a00]/10 border border-[#ff6a00]/20 px-2 py-0.5 rounded-sm">
                       {art.tag}
                     </span>
                     <span className="font-mono text-xs text-slate-500">{art.date}</span>
                   </div>
-                  <h3 className="font-display font-bold text-base sm:text-lg text-white hover:text-[#00ffaa] transition-colors duration-200">
+                  <h3 className="font-display font-bold text-base sm:text-lg text-white hover:text-[#ff6a00] transition-colors duration-200">
                     {art.title}
                   </h3>
                   <p className="text-slate-400 text-xs sm:text-sm font-sans leading-relaxed">
@@ -915,7 +915,7 @@ export default function App() {
                     href={art.external_url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-slate-900 border border-slate-800 hover:border-[#00ffaa] text-slate-300 hover:text-[#00ffaa] font-mono text-xs rounded transition-colors duration-200 flex items-center space-x-1.5"
+                    className="px-4 py-2 bg-slate-900 border border-slate-800 hover:border-[#ff6a00] text-slate-300 hover:text-[#ff6a00] font-mono text-xs rounded transition-colors duration-200 flex items-center space-x-1.5"
                   >
                     <span>Read Article</span>
                     <ExternalLink className="w-3.5 h-3.5" />
@@ -929,7 +929,7 @@ export default function App() {
         {/* SPEAKING & PODCAST */}
         <section id="speaking" className="scroll-section py-24 border-t border-slate-800/40">
           <div className="max-w-3xl mb-12">
-            <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#00ffaa] bg-[#00ffaa]/5 px-2.5 py-1 rounded-sm mb-4">
+            <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#ff6a00] bg-[#ff6a00]/5 px-2.5 py-1 rounded-sm mb-4">
               <Radio className="w-3.5 h-3.5" />
               <span>COMMUNITY BROADCAST</span>
             </div>
@@ -980,7 +980,7 @@ export default function App() {
                         href={speak.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#00ffaa] hover:underline font-mono text-xs flex items-center space-x-1"
+                        className="text-[#ff6a00] hover:underline font-mono text-xs flex items-center space-x-1"
                       >
                         <span>$ view event details</span>
                         <ChevronRight className="w-3.5 h-3.5" />
@@ -998,7 +998,7 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <div className="lg:col-span-5 space-y-6">
-              <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#00ffaa] bg-[#00ffaa]/5 px-2.5 py-1 rounded-sm">
+              <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#ff6a00] bg-[#ff6a00]/5 px-2.5 py-1 rounded-sm">
                 <Database className="w-3.5 h-3.5" />
                 <span>OFFENSIVE SIMULATOR</span>
               </div>
@@ -1012,15 +1012,15 @@ export default function App() {
 
               <div className="space-y-2 text-xs font-mono text-slate-400">
                 <div className="flex items-center space-x-2">
-                  <Check className="w-3.5 h-3.5 text-[#00ffaa]" />
+                  <Check className="w-3.5 h-3.5 text-[#ff6a00]" />
                   <span>Interactive Dependency Resolver Testing</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Check className="w-3.5 h-3.5 text-[#00ffaa]" />
+                  <Check className="w-3.5 h-3.5 text-[#ff6a00]" />
                   <span>Automatic PII Redaction Audit</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Check className="w-3.5 h-3.5 text-[#00ffaa]" />
+                  <Check className="w-3.5 h-3.5 text-[#ff6a00]" />
                   <span>Pickle Weights Deserialization Blocks</span>
                 </div>
               </div>
@@ -1028,10 +1028,10 @@ export default function App() {
 
             {/* Email capture box */}
             <div className="lg:col-span-7 bg-[#0f1520] border border-slate-800 p-6 sm:p-8 rounded-sm space-y-6 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-[#00ffaa]/5 rounded-full blur-2xl pointer-events-none" />
+              <div className="absolute top-0 right-0 w-24 h-24 bg-[#ff6a00]/5 rounded-full blur-2xl pointer-events-none" />
               
               <div className="space-y-2">
-                <span className="font-mono text-[9px] text-[#00ffaa] uppercase tracking-wider block">REGISTRATION INTERFACE</span>
+                <span className="font-mono text-[9px] text-[#ff6a00] uppercase tracking-wider block">REGISTRATION INTERFACE</span>
                 <h3 className="font-display font-bold text-lg text-white">Access the OffSec Security Suite</h3>
                 <p className="text-slate-400 text-xs font-sans">
                   Be notified when we deploy our sandbox testing harness containing 40+ mock multi-agent exploitation scenarios.
@@ -1047,12 +1047,12 @@ export default function App() {
                       placeholder="operator@security-dept.io"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="bg-slate-900/60 border border-slate-800 text-white rounded-sm px-4 py-3 text-sm font-mono focus:border-[#00ffaa] focus:outline-none flex-grow"
+                      className="bg-slate-900/60 border border-slate-800 text-white rounded-sm px-4 py-3 text-sm font-mono focus:border-[#ff6a00] focus:outline-none flex-grow"
                     />
                     <button 
                       type="submit"
                       disabled={formLoading}
-                      className="bg-[#00ffaa]/10 hover:bg-[#00ffaa]/20 border border-[#00ffaa]/40 hover:border-[#00ffaa] text-[#00ffaa] font-mono text-xs px-6 py-3 rounded-sm font-bold transition-all duration-200 flex items-center justify-center space-x-2 disabled:opacity-50"
+                      className="bg-[#ff6a00]/10 hover:bg-[#ff6a00]/20 border border-[#ff6a00]/40 hover:border-[#ff6a00] text-[#ff6a00] font-mono text-xs px-6 py-3 rounded-sm font-bold transition-all duration-200 flex items-center justify-center space-x-2 disabled:opacity-50"
                     >
                       {formLoading ? (
                         <>
@@ -1072,9 +1072,9 @@ export default function App() {
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  className="p-6 border border-[#00ffaa]/30 bg-[#00ffaa]/5 rounded-sm space-y-3"
+                  className="p-6 border border-[#ff6a00]/30 bg-[#ff6a00]/5 rounded-sm space-y-3"
                 >
-                  <div className="flex items-center space-x-2 text-[#00ffaa]">
+                  <div className="flex items-center space-x-2 text-[#ff6a00]">
                     <Check className="w-5 h-5" />
                     <span className="font-mono text-sm font-bold">REGISTRATION SIGNED</span>
                   </div>
@@ -1098,7 +1098,7 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             
             <div className="space-y-6">
-              <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#00ffaa] bg-[#00ffaa]/5 px-2.5 py-1 rounded-sm">
+              <div className="inline-flex items-center space-x-2 font-mono text-xs text-[#ff6a00] bg-[#ff6a00]/5 px-2.5 py-1 rounded-sm">
                 <Lock className="w-3.5 h-3.5" />
                 <span>HANDSHAKE_INITIATED</span>
               </div>
@@ -1119,50 +1119,50 @@ export default function App() {
                     href="https://linkedin.com/in/iammayank"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between p-3.5 border border-slate-900 hover:border-[#00ffaa]/40 bg-slate-950/40 text-slate-300 hover:text-white rounded transition-colors group"
+                    className="flex items-center justify-between p-3.5 border border-slate-900 hover:border-[#ff6a00]/40 bg-slate-950/40 text-slate-300 hover:text-white rounded transition-colors group"
                   >
                     <span className="flex items-center space-x-2">
-                      <Linkedin className="w-4 h-4 text-[#00ffaa]" />
+                      <Linkedin className="w-4 h-4 text-[#ff6a00]" />
                       <span>$ connect --linkedin</span>
                     </span>
-                    <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#00ffaa] group-hover:translate-x-0.5 transition-all" />
+                    <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#ff6a00] group-hover:translate-x-0.5 transition-all" />
                   </a>
 
                   <a 
                     href="https://github.com/mack-droid"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between p-3.5 border border-slate-900 hover:border-[#00ffaa]/40 bg-slate-950/40 text-slate-300 hover:text-white rounded transition-colors group"
+                    className="flex items-center justify-between p-3.5 border border-slate-900 hover:border-[#ff6a00]/40 bg-slate-950/40 text-slate-300 hover:text-white rounded transition-colors group"
                   >
                     <span className="flex items-center space-x-2">
-                      <Github className="w-4 h-4 text-[#00ffaa]" />
+                      <Github className="w-4 h-4 text-[#ff6a00]" />
                       <span>$ connect --github</span>
                     </span>
-                    <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#00ffaa] group-hover:translate-x-0.5 transition-all" />
+                    <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#ff6a00] group-hover:translate-x-0.5 transition-all" />
                   </a>
 
                   <a 
                     href="https://x.com/ping_mayank"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between p-3.5 border border-slate-900 hover:border-[#00ffaa]/40 bg-slate-950/40 text-slate-300 hover:text-white rounded transition-colors group"
+                    className="flex items-center justify-between p-3.5 border border-slate-900 hover:border-[#ff6a00]/40 bg-slate-950/40 text-slate-300 hover:text-white rounded transition-colors group"
                   >
                     <span className="flex items-center space-x-2">
-                      <ExternalLink className="w-4 h-4 text-[#00ffaa]" />
+                      <ExternalLink className="w-4 h-4 text-[#ff6a00]" />
                       <span>$ connect --twitter</span>
                     </span>
-                    <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#00ffaa] group-hover:translate-x-0.5 transition-all" />
+                    <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#ff6a00] group-hover:translate-x-0.5 transition-all" />
                   </a>
 
                   <a 
                     href="mailto:mayanks.msharma@gmail.com"
-                    className="flex items-center justify-between p-3.5 border border-slate-900 hover:border-[#00ffaa]/40 bg-slate-950/40 text-slate-300 hover:text-white rounded transition-colors group"
+                    className="flex items-center justify-between p-3.5 border border-slate-900 hover:border-[#ff6a00]/40 bg-slate-950/40 text-slate-300 hover:text-white rounded transition-colors group"
                   >
                     <span className="flex items-center space-x-2">
-                      <Mail className="w-4 h-4 text-[#00ffaa]" />
+                      <Mail className="w-4 h-4 text-[#ff6a00]" />
                       <span>$ mailto:mayanks.msharma@gmail.com</span>
                     </span>
-                    <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#00ffaa] group-hover:translate-x-0.5 transition-all" />
+                    <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#ff6a00] group-hover:translate-x-0.5 transition-all" />
                   </a>
                 </div>
 
@@ -1188,12 +1188,12 @@ export default function App() {
         <motion.button
           onClick={() => setSandboxOpen(true)}
           whileHover={{ scale: 1.05 }}
-          className="bg-black border border-[#00ffaa] shadow-lg shadow-[#00ffaa]/15 rounded p-4 text-left w-64 md:w-72 font-mono flex flex-col space-y-2 relative group focus:outline-none"
+          className="bg-black border border-[#ff6a00] shadow-lg shadow-[#ff6a00]/15 rounded p-4 text-left w-64 md:w-72 font-mono flex flex-col space-y-2 relative group focus:outline-none"
         >
           {/* Header */}
-          <div className="flex items-center justify-between border-b border-[#00ffaa]/20 pb-1 text-[9px] text-[#00ffaa]/60 uppercase tracking-widest font-mono">
+          <div className="flex items-center justify-between border-b border-[#ff6a00]/20 pb-1 text-[9px] text-[#ff6a00]/60 uppercase tracking-widest font-mono">
             <span className="flex items-center space-x-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00ffaa] animate-pulse" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#ff6a00] animate-pulse" />
               <span>ACTIVE MONITOR</span>
             </span>
             <span>LAL-SEC v2.1</span>
@@ -1206,7 +1206,7 @@ export default function App() {
             </div>
             <div className="flex items-center justify-between text-[10px] text-slate-400">
               <span>MATRIX STATUS</span>
-              <span className="text-[#00ffaa] font-bold">READY</span>
+              <span className="text-[#ff6a00] font-bold">READY</span>
             </div>
             <div className="flex items-center justify-between text-[10px] text-slate-400">
               <span>THREAT LEVEL</span>
@@ -1214,7 +1214,7 @@ export default function App() {
                 threatLevel === "CRITICAL" ? "text-rose-500 animate-pulse" :
                 threatLevel === "ELEVATED" ? "text-amber-500" :
                 threatLevel === "MEDIUM" ? "text-yellow-400" :
-                "text-[#00ffaa]"
+                "text-[#ff6a00]"
               }`}>
                 {threatLevel}
               </span>
@@ -1222,7 +1222,7 @@ export default function App() {
           </div>
 
           {/* Bottom Call to action visual link */}
-          <div className="pt-2 border-t border-[#00ffaa]/10 text-[9px] text-center text-[#00ffaa] hover:underline group-hover:scale-[1.02] transition-transform duration-200">
+          <div className="pt-2 border-t border-[#ff6a00]/10 text-[9px] text-center text-[#ff6a00] hover:underline group-hover:scale-[1.02] transition-transform duration-200">
             [ CLICK TO RUN EXPLOIT SIMULATOR ]
           </div>
         </motion.button>
@@ -1241,13 +1241,13 @@ export default function App() {
               initial={{ scale: 0.95, y: 15 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 15 }}
-              className="bg-[#0f1520] border-2 border-[#00ffaa]/80 rounded max-w-4xl w-full max-h-[90vh] flex flex-col shadow-2xl shadow-[#00ffaa]/10 overflow-hidden"
+              className="bg-[#0f1520] border-2 border-[#ff6a00]/80 rounded max-w-4xl w-full max-h-[90vh] flex flex-col shadow-2xl shadow-[#ff6a00]/10 overflow-hidden"
             >
               
               {/* Terminal Title Bar */}
               <div className="bg-black border-b border-slate-800 p-4 flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <Shield className="w-5 h-5 text-[#00ffaa] animate-pulse shrink-0" />
+                  <Shield className="w-5 h-5 text-[#ff6a00] animate-pulse shrink-0" />
                   <div>
                     <span className="font-mono text-xs font-bold text-white tracking-widest uppercase block">
                       OffSec Exploit & Mitigation Sandbox
@@ -1307,13 +1307,13 @@ export default function App() {
                         onClick={() => executeOffensiveSimulation(att.id as any)}
                         className={`w-full text-left p-3 border rounded transition-all flex flex-col space-y-1.5 focus:outline-none disabled:opacity-40 ${
                           selectedAttack === att.id 
-                            ? "border-[#00ffaa] bg-[#00ffaa]/5" 
+                            ? "border-[#ff6a00] bg-[#ff6a00]/5" 
                             : "border-slate-800 hover:border-slate-700 bg-black/40"
                         }`}
                       >
                         <div className="flex items-center justify-between">
                           <span className="text-xs font-bold text-white">{att.title}</span>
-                          <ChevronRight className={`w-3.5 h-3.5 transition-transform ${selectedAttack === att.id ? "text-[#00ffaa] rotate-90" : "text-slate-500"}`} />
+                          <ChevronRight className={`w-3.5 h-3.5 transition-transform ${selectedAttack === att.id ? "text-[#ff6a00] rotate-90" : "text-slate-500"}`} />
                         </div>
                         <span className="text-[10px] text-slate-400 font-sans leading-relaxed">{att.desc}</span>
                       </button>
@@ -1346,7 +1346,7 @@ export default function App() {
                           if (log.startsWith("[+]") || log.startsWith("[*]")) colorClass = "text-amber-400";
                           if (log.includes("SHIELD TRIGGERED")) colorClass = "text-cyan-400 font-extrabold animate-pulse";
                           if (log.startsWith("[🛡️")) colorClass = "text-cyan-400";
-                          if (log.startsWith("[✓]")) colorClass = "text-[#00ffaa] font-bold bg-[#00ffaa]/5 p-1 rounded-sm";
+                          if (log.startsWith("[✓]")) colorClass = "text-[#ff6a00] font-bold bg-[#ff6a00]/5 p-1 rounded-sm";
 
                           return (
                             <div key={i} className={`${colorClass} whitespace-pre-wrap font-mono`}>
@@ -1361,7 +1361,7 @@ export default function App() {
                   {/* Terminal interactive status footer */}
                   <div className="border-t border-slate-900 pt-4 flex items-center justify-between mt-4">
                     <div className="flex items-center space-x-2">
-                      <span className={`w-2 h-2 rounded-full ${attackRunning ? "bg-amber-400 animate-ping" : attackSuccess ? "bg-[#00ffaa]" : "bg-slate-600"}`} />
+                      <span className={`w-2 h-2 rounded-full ${attackRunning ? "bg-amber-400 animate-ping" : attackSuccess ? "bg-[#ff6a00]" : "bg-slate-600"}`} />
                       <span className="text-[10px] text-slate-500 uppercase tracking-wider">
                         {attackRunning ? "Simulating Exploits..." : attackSuccess ? "Threat Neutralized" : "Terminal Standing By"}
                       </span>
@@ -1369,7 +1369,7 @@ export default function App() {
                     {selectedAttack && !attackRunning && (
                       <button
                         onClick={() => executeOffensiveSimulation(selectedAttack)}
-                        className="text-[10px] text-[#00ffaa] border border-[#00ffaa]/30 hover:border-[#00ffaa] px-2.5 py-1.5 rounded bg-[#00ffaa]/5 hover:bg-[#00ffaa]/10 transition-colors"
+                        className="text-[10px] text-[#ff6a00] border border-[#ff6a00]/30 hover:border-[#ff6a00] px-2.5 py-1.5 rounded bg-[#ff6a00]/5 hover:bg-[#ff6a00]/10 transition-colors"
                       >
                         Re-run Simulator
                       </button>
