@@ -5,6 +5,13 @@ on:
     branches: [ main, develop ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'Deploy to Cloudflare Pages'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   build-and-deploy:
@@ -31,8 +38,8 @@ jobs:
         
     - name: Deploy to Cloudflare Pages
       uses: cloudflare/wrangler-action@v3
-      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      if: (github.ref == 'refs/heads/main' && github.event_name == 'push') || (github.event_name == 'workflow_dispatch' && inputs.deploy == true)
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        command: pages deploy dist --project-name=your-project-name
+        command: pages deploy dist --project-name=logos-ai-labs-portfolio
