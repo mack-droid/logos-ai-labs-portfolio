@@ -13,31 +13,45 @@ on:
         default: false
         type: boolean
 
+# Security: Limit the permissions of the GITHUB_TOKEN
+permissions:
+  contents: read
+  deployments: write   # Needed if the action updates deployment statuses
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     
+    # Optional: Use an environment for production deployments to add protection
+    environment:
+      name: production
+      url: ${{ steps.deploy.outputs.url }}
+    
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      
+    
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '24'
+        node-version: '24.x'
         cache: 'npm'
-        
-    - name: Install dependencies
-      run: npm install
-      
+        # Explicitly point to the lock file (optional but good practice)
+        cache-dependency-path: package-lock.json
+    
+    - name: Install dependencies (using lock file)
+      # npm ci is faster and strictly checks the lock file
+      run: npm ci
+    
     - name: Run linter
       run: npm run lint
-      
+    
     - name: Build application
       run: npm run build
-        
+    
     - name: Deploy to Cloudflare Pages
       uses: cloudflare/wrangler-action@v3
+      id: deploy
       if: (github.ref == 'refs/heads/main' && github.event_name == 'push') || (github.event_name == 'workflow_dispatch' && inputs.deploy == true)
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
