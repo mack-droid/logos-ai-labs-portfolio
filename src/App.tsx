@@ -204,7 +204,7 @@ export default function App() {
             }
           },
           color: {
-            value: ["#00ffaa", "#ff6a00", "#00d0ff"]
+            value: ["#00ffaa", "#ff6a00", "#00d0ff", "#bc13fe", "#ff1493"]
           },
           links: {
             enable: true,
