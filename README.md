@@ -19,7 +19,7 @@ View your app in AI Studio: https://ai.studio/apps/68455196-a3cb-4adb-b83f-ca240
 
 ## 📋 Prerequisites
 
-- Node.js (v20 or higher)
+- Node.js (v24 or higher)
 - npm or yarn
 
 ## 🛠️ Installation
